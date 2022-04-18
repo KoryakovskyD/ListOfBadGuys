@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.listofbadguys.controllers.FXMLAddNewPersonController"
+            prefHeight="100.0" prefWidth="600.0" alignment="CENTER">
+    <children>
+        <Label fx:id="label" text="Добавить 'хорошего' парня в базу данных" />
+        <HBox>
+            <Label fx:id="label1" text="Фамилия" />
+            <TextArea fx:id="textArea" text=""/>
+        </HBox>
+        <HBox>
+            <Label fx:id="label2" text="Причина" />
+            <TextArea fx:id="textArea2" text=""/>
+        </HBox>
+        <Button text="Добавить" onAction="#handleButtonAction" fx:id="button1" />
+    </children>
+</VBox>

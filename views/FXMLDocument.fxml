@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="VBox" prefHeight="450" prefWidth="800" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.listofbadguys.controllers.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" text="Добавление в список 'хороших' парней" />
+
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn text="LastName" fx:id="lastNameCol" />
+                <TableColumn text="Comment" fx:id="commentCol" />
+            </columns>
+        </TableView>
+
+        <HBox id="VBox" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1">
+            <Button text="Добавить" onAction="#handleButton1Action" fx:id="button1" />
+            <Button text="Посчитать" onAction="#handleButton2Action" fx:id="button2" />
+            <Button text="Обновить базу" onAction="#handleButton3Action" fx:id="button3" />
+        </HBox>
+    </children>
+</VBox>

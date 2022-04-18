@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.listofbadguys.controllers.FXMLCountController"
+      prefHeight="100.0" prefWidth="600.0" alignment="CENTER">
+    <children>
+        <Label fx:id="label" text="Подсчитать сколько раз упоминается парень в базе" />
+        <HBox>
+            <Label fx:id="label1" text="Фамилия" />
+            <TextArea fx:id="textArea" text=""/>
+        </HBox>
+        <Button text="ОК" onAction="#handleButtonAction" fx:id="button1" />
+    </children>
+</VBox>
